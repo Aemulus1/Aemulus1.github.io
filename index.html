@@ -29,6 +29,8 @@ header p{color:#bac8d9;max-width:620px;margin:0 auto;line-height:1.6}
 .art.photo{background:linear-gradient(145deg,#567b65,#8da49a 45%,#a78c76)}
 .art.soccer{background:radial-gradient(circle,#8bd8aa,#124b4b)}
 .art.pixel{background:radial-gradient(circle at 50% 45%,#38ff70 0 7%,#0d2817 8% 28%,#050806 55%,#020302 100%)}
+.art.sjoel{background:linear-gradient(145deg,#c3cdd4 0%,#778b99 42%,#1e2a33 100%)}
+.art.synth{background:linear-gradient(135deg,#191329,#3b2361 45%,#0d7383 100%)}
 .art.forest{background:linear-gradient(145deg,#13393a 0 42%,#d8a52d 43% 65%,#2b1a0e 66% 100%)}
 .art.museum{background:radial-gradient(circle at 50% 30%,#947b53,#17130f 62%,#090806)}
 .emoji{font-size:5.5rem;filter:drop-shadow(0 8px 9px #0006);transform:rotate(-8deg)}
@@ -38,6 +40,15 @@ h2{margin:9px 0;font-size:1.45rem}
 .description{color:#bfcddd;line-height:1.55;margin:0 0 22px;flex:1}
 .open{font-weight:800;color:#f3d28a}
 footer{text-align:center;color:#92a3b9;margin-top:52px;font-size:.9rem}
+
+.folder{margin:28px 0 18px;border:1px solid #435267;border-radius:20px;background:#182333;overflow:hidden}
+.folder summary{cursor:pointer;list-style:none;padding:22px 24px;font-size:1.15rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#e8bf74;display:flex;align-items:center;justify-content:space-between}
+.folder summary::-webkit-details-marker{display:none}
+.folder summary::after{content:"＋";font-size:1.5rem;color:#f3d28a}
+.folder[open] summary::after{content:"−"}
+.folder .grid{padding:0 22px 24px}
+.folder-note{color:#91a5ba;font-size:.9rem;font-weight:500;letter-spacing:0;text-transform:none;margin-left:12px}
+
 </style>
 </head>
 <body>
@@ -48,17 +59,22 @@ footer{text-align:center;color:#92a3b9;margin-top:52px;font-size:.9rem}
 <p>Ons digitale atelier: games, generatieve beeldprojecten en het Museum of Useless Machines.</p>
 </header>
 
-<h2 class="section-title">Games</h2>
+
+<details class="folder">
+<summary>🎮 Games <span class="folder-note">spellen en arcade-experimenten</span></summary>
 <section class="grid" aria-label="Games">
 <a class="card" href="https://aemulus1.github.io/Catch-the-fascist/"><div class="art catch"><span class="emoji">🏏💥</span></div><div class="content"><span class="tag">Spel</span><h2>Catch the Fascist</h2><p class="description">Een knotsgek actiespel vol achtervolgingen, botsingen en plonks.</p><span class="open">Open het spel ↗</span></div></a>
 <a class="card" href="https://aemulus1.github.io/Checkerchess/"><div class="art chess"><span class="emoji">♛♟️</span></div><div class="content"><span class="tag">Strategisch spel</span><h2>CheckerChess</h2><p class="description">Schaak en dammen samengebracht op één bord.</p><span class="open">Open het spel ↗</span></div></a>
 <a class="card" href="https://aemulus1.github.io/Ludo-/"><div class="art ludo"><span class="emoji">🎲🔴</span></div><div class="content"><span class="tag">Bordspel</span><h2>Ludo-extra</h2><p class="description">Onze eigen digitale variant op het klassieke dobbelspel.</p><span class="open">Open het spel ↗</span></div></a>
 <a class="card" href="https://aemulus1.github.io/Soccer-ping/"><div class="art soccer"><span class="emoji">⚽🥅</span></div><div class="content"><span class="tag">Arcadespel</span><h2>Soccer Ping</h2><p class="description">Een voetbalvariant op Ping. Speel, mik en scoor.</p><span class="open">Open het spel ↗</span></div></a>
 <a class="card" href="https://aemulus1.github.io/The-Last-Green-Pixel/"><div class="art pixel"><span class="emoji">🟩</span></div><div class="content"><span class="tag">Spel</span><h2>The Last Green Pixel</h2><p class="description">Een pixelspel rond het laatste groene punt dat nog overeind staat.</p><span class="open">Open het spel ↗</span></div></a>
+<a class="card" href="https://aemulus1.github.io/Sjoelbak/"><div class="art sjoel"><span class="emoji">🥏✨</span></div><div class="content"><span class="tag">Arcade-bordspel</span><h2>Sjoelbak tegen Omnia</h2><p class="description">Een moderne digitale sjoelbak met metalen uitstraling, oplichtende punten en een wedstrijd tegen Omnia.</p><span class="open">Open het spel ↗</span></div></a>
 </section>
+</details>
 
-<h2 class="section-title">Beeldprojecten</h2>
-<section class="grid" aria-label="Beeldprojecten">
+<details class="folder">
+<summary>🎨 Beeldprogramma’s <span class="folder-note">mieren, perspectief en generatieve beelden</span></summary>
+<section class="grid" aria-label="Beeldprogramma's">
 <a class="card" href="https://aemulus1.github.io/Ant-squares/"><div class="art ant"><span class="emoji">🐜🎨</span></div><div class="content"><span class="tag">Mierenschilderij</span><h2>Antpainting Squares CMYC</h2><p class="description">Digitale mieren schilderen samen kleur, beweging en patronen.</p><span class="open">Open het project ↗</span></div></a>
 <a class="card" href="https://aemulus1.github.io/Ants-geometric/"><div class="art geometric"><span class="emoji">🐜🔺</span></div><div class="content"><span class="tag">Mierenschilderij</span><h2>Antpainting Geometricals CMYC</h2><p class="description">Vier digitale mieren bouwen vrije geometrische kleurcomposities.</p><span class="open">Open het project ↗</span></div></a>
 <a class="card" href="https://aemulus1.github.io/Ant-city/"><div class="art city"><span class="emoji">🐜🏙️</span></div><div class="content"><span class="tag">Beeldexperiment</span><h2>Ant-city — frontal</h2><p class="description">Een digitale mier bouwt laag na laag een stad.</p><span class="open">Open het project ↗</span></div></a>
@@ -66,11 +82,21 @@ footer{text-align:center;color:#92a3b9;margin-top:52px;font-size:.9rem}
 <a class="card" href="https://aemulus1.github.io/City-top-view-photo/"><div class="art photo"><span class="emoji">🏙️📷</span></div><div class="content"><span class="tag">Beeldproject</span><h2>City Top View Photo</h2><p class="description">Een fotografischer generatieve stad met gebouwen, wegen, groen en één vluchtpunt.</p><span class="open">Open het project ↗</span></div></a>
 <a class="card" href="https://aemulus1.github.io/Bosmieren/"><div class="art forest"><span class="emoji">🌲🐜</span></div><div class="content"><span class="tag">Mierenschilderij</span><h2>Bosmieren</h2><p class="description">Vier digitale mieren schilderen laag voor laag een donker clair-obscur bos met kleurige bosgrond, bomen en grillige schaduwen.</p><span class="open">Open het project ↗</span></div></a>
 </section>
+</details>
 
-<h2 class="section-title">Museum</h2>
+<details class="folder">
+<summary>🎹 Muziek <span class="folder-note">synths en klankexperimenten</span></summary>
+<section class="grid" aria-label="Muziek">
+<a class="card" href="https://aemulus1.github.io/TK.Synth/"><div class="art synth"><span class="emoji">🎛️🎹</span></div><div class="content"><span class="tag">Muziektool</span><h2>TK Synth Studio</h2><p class="description">Een browser-synthesizer met drums, arpeggiator, pads, bassequencer, akkoorden en effecten.</p><span class="open">Open de synth ↗</span></div></a>
+</section>
+</details>
+
+<details class="folder">
+<summary>🏛️ Museum <span class="folder-note">digitale nutteloosheid, zorgvuldig tentoongesteld</span></summary>
 <section class="grid" aria-label="Museum">
 <a class="card" href="https://aemulus1.github.io/Museum-useless-machines-/"><div class="art museum"><span class="emoji">🏛️⚙️</span></div><div class="content"><span class="tag">Wandelbaar museum</span><h2>Museum of Useless Machines</h2><p class="description">Onze zinloze machines samen in één rondwandelbare museumruimte.</p><span class="open">Open het museum ↗</span></div></a>
 </section>
+</details>
 
 <footer>© 2026 Teekay & Omnia · Meer experimenten volgen</footer>
 </main>
